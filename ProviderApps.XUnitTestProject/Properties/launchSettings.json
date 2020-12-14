@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "ProviderApps.XUnitTestProject": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DataSourceName": "EHSI"
+      }
+    }
+  }
+}

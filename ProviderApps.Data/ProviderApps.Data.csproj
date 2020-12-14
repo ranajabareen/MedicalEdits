@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20191028085716_InitialMigratio.cs" />
+    <Compile Remove="Migrations\20191028085716_InitialMigratio.Designer.cs" />
+    <Compile Remove="Migrations\Application\20200617141619_AddTypeCodeInOrderTableAndMakeTypeEnum.cs" />
+    <Compile Remove="Migrations\Application\20200617141619_AddTypeCodeInOrderTableAndMakeTypeEnum.Designer.cs" />
+    <Compile Remove="Migrations\Application\20200617142818_AddTypeCodeInOrderTable.cs" />
+    <Compile Remove="Migrations\Application\20200617142818_AddTypeCodeInOrderTable.Designer.cs" />
+    <Compile Remove="Migrations\Application\20200618073559_AddTypeCodeInOrderTable.cs" />
+    <Compile Remove="Migrations\Application\20200618073559_AddTypeCodeInOrderTable.Designer.cs" />
+    <Compile Remove="Migrations\Application\20200618073827_AddTypeCodeInOrderTable.cs" />
+    <Compile Remove="Migrations\Application\20200618073827_AddTypeCodeInOrderTable.Designer.cs" />
+    <Compile Remove="Migrations\Application\20200618075156_MakeTypeEnumInOrderTable.cs" />
+    <Compile Remove="Migrations\Application\20200618075156_MakeTypeEnumInOrderTable.Designer.cs" />
+    <Compile Remove="Migrations\Application\20200618080051_RenameOrderTypeToTypeInOrderTable.cs" />
+    <Compile Remove="Migrations\Application\20200618080051_RenameOrderTypeToTypeInOrderTable.Designer.cs" />
+    <Compile Remove="Migrations\Application\20200705071909_Updated Models.cs" />
+    <Compile Remove="Migrations\Application\20200705071909_Updated Models.Designer.cs" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.8" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="3.1.4" />
+    <PackageReference Include="System.Linq.Dynamic.Core" Version="1.2.2" />
+    <PackageReference Include="Oracle.EntityFrameworkCore" Version="3.19.80" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ProviderApps.Core\ProviderApps.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Migrations\Application\" />
+  </ItemGroup>
+
+</Project>
